@@ -1,0 +1,196 @@
+/*全局清除及兼容性*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*背景的样式*/
+
+body {
+    background-color: #ededed;
+}
+
+
+/*计算器背景的样式*/
+
+#wrap {
+    position: relative;
+    top: 50px;
+    width: 400px;
+    height: 360px;
+    margin: 0 auto;
+    /*background: url(../images/1.jpg) no-repeat;*/
+    background-image: url(../images/1.jpg);
+    background-color: #CC8400;
+    border-radius: 8px;
+}
+
+
+/*table 的样式*/
+
+#wrap table {
+    position: absolute;
+    margin: 10px;
+    width: 380px;
+    height: 340px;
+    /*width: 94%;*/
+    /*height: 96%;*/
+    background-color: #F4F4F4;
+    border-radius: 8px;
+}
+
+
+/*table  所有tr 的样式*/
+
+#wrap table tr {
+    /*margin: 0 auto;*/
+    /*height: 25px;*/
+    /*padding: 15px 0;*/
+    /*border: 1px solid black;*/
+}
+
+#wrap table tr:nth-child(1) {
+    height: 80px;
+}
+
+
+/*输出结果的样式*/
+
+#wrap table tr:nth-child(1) .result {
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding: 8px;
+    /*margin: 10px auto 10px;*/
+    width: 360px;
+    height: 70px;
+    outline: none;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #FBE38A;
+    text-align: right;
+}
+
+
+/*清空table 每一行 第一列的样式*/
+
+#wrap table tr:nth-child(2) td:first-child,
+#wrap table tr:nth-child(3) td:first-child,
+#wrap table tr:nth-child(4) td:first-child,
+#wrap table tr:nth-child(5) td:first-child,
+#wrap table tr:nth-child(6) td:first-child {
+    text-align: center;
+}
+
+#wrap table tr td {
+    text-align: center;
+    vertical-align: center;
+}
+
+
+/*所有 input button的样式*/
+
+#wrap table tr td #btn {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 35px;
+    /*border: 1px;*/
+    border-radius: 5px;
+    border-color: #DDDDDD;
+    background-color: #EDEDED;
+    outline: none;
+}
+
+
+/*所有input 输入框的样式*/
+
+#wrap table tr input {
+    width: 60px;
+    height: 35px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+/*按键0 的样式*/
+
+#wrap table tr td #btn61 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 135px;
+    height: 35px;
+    /*border: 1px;*/
+    border-radius: 5px;
+    border-color: #DDDDDD;
+    background-color: #EDEDED;
+    outline: none;
+}
+
+
+/*按键 = 的样式*/
+
+#wrap table tr td #btn55 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 90px;
+    /*border: 1px;*/
+    border-radius: 5px;
+    border-color: #DDDDDD;
+    background-color: #EDEDED;
+    outline: none;
+}
+
+
+/*运算符的样式*/
+
+#wrap table tr td #btn34,
+#wrap table tr td #btn44,
+#wrap table tr td #btn54,
+#wrap table tr td #btn64 {
+    border-color: #DDDDDD;
+    background-color: #C0C0C0;
+}
+
+
+/*= 号 及 高级运算符样式*/
+
+#wrap table tr td #btn25,
+#wrap table tr td #btn35,
+#wrap table tr td #btn45,
+#wrap table tr td #btn55 {
+    background-color: #5D5D5D;
+    border-color: #5D5D5D;
+    color: #FFFFFF;
+}
+
+
+/*C sin cos 高级运算符样式*/
+
+#wrap table tr td #btn21,
+#wrap table tr td #btn22,
+#wrap table tr td #btn23,
+#wrap table tr td #btn24{
+    background-color: #CC5500;
+    border-color: #CC5500;
+    color: #FFFFFF;
+}
+
+
+/*设置table  边框颜色*/
+
+#wrap table tr td {
+    /*border: 1px solid red;*/
+}
